@@ -1,14 +1,22 @@
 <template>
-    <h6>It's Home Page</h6>
+  <Navbar></Navbar>
+  <Header></Header>
 </template>
 
 <script>
-export default {
-    name : 'Home',
+import Navbar from './Navbar.vue'
+import Header from './Header.vue'
 
+
+export default {
+  name: 'Home',
+
+  components: {
+    Navbar,
+    Header,
+  }
 }
 </script>
 
 <style>
-
 </style>
