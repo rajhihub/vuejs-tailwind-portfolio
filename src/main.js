@@ -5,12 +5,13 @@ import 'bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 import router from './router/router.js';
-import './router/main.js';
+import './data/app.js';
+import './style/home.css';
+
 
 import jQuery from "jquery";
 const $ = jQuery;
 window.$ = $;
-
 
 
 
