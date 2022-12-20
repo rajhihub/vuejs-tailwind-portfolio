@@ -2,7 +2,7 @@
 
 <nav class="navbar navbar-expand-lg navbar-light navbar-float">
       <div class="container">
-        <a href="index.html" class="navbar-brand">Digi<span class="text-primary">Gram.</span></a>
+        <a  class="navbar-brand">My<span class="text-primary">Portfolio</span></a>
 
         <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>

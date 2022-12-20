@@ -22,3 +22,9 @@ export default [{
         intro: " GitHub is a website and cloud-based service that helps developers store",
     },
 ];
+
+export const contact = [{
+
+    info: ''
+
+}];
