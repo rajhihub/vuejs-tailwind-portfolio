@@ -103,7 +103,7 @@ export default {
     Projects,
     Contact,
     Blog,
-    Footer
+    Footer,
   }
 }
 </script>

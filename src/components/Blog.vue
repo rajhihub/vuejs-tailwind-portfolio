@@ -34,7 +34,7 @@
         </div>
 
         <div
-          v-for="(a, i) in blog"
+          v-for="(a, i) in 3"
           :key="a"
           class="col-md-6 col-lg-3 py-3 wow fadeInUp">
           <div class="card-blog">
@@ -77,7 +77,7 @@
 <script>
 export default {
   props: {
-    blog: Array
+    blog: Array,
   }
 }
 </script>

@@ -5,7 +5,7 @@ import 'bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 import router from './router/router.js';
-import './data/app.js';
+import './data/projects.js';
 import './style/home.css';
 
 

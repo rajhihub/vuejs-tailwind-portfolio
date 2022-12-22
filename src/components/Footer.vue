@@ -37,10 +37,7 @@
         </div>
         <div class="col-lg-3 py-3">
           <h5>Blogs</h5>
-          <ul v-for ="(a,i) in blog" :key ="a" class="footer-menu">
-            <li><a>{{blog[i].title}}</a></li>
-            
-          </ul>
+         
         </div>
         <div class="col-lg-3 py-3">
           <h5>Subscribe</h5>
@@ -64,17 +61,12 @@
       <div class="row">
         <div class="col-sm-6 py-2">
           <p id="copyright">
-            &copy; 2020 <a href="https://macodeid.com/">MACode ID</a>. All
+            &copy; 2022 <a>Personal Portfolio</a>. All
             rights reserved
           </p>
         </div>
         <div class="col-sm-6 py-2 text-right">
-          <div class="d-inline-block px-3">
-            <a href="#">Privacy</a>
-          </div>
-          <div class="d-inline-block px-3">
-            <a href="#">Contact Us</a>
-          </div>
+          
         </div>
       </div>
     </div>

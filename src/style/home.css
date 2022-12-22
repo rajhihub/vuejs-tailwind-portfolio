@@ -1694,6 +1694,11 @@ a.text-dark:focus {
     border-radius: 6px 0 0 6px;
 }
 
+.techs img {
+    margin-right: 10px;
+    opacity: 90%;
+}
+
 .counter-section .row>*:last-child {
     border-radius: 0 6px 6px 0;
 }
@@ -1835,7 +1840,7 @@ a.text-dark:focus {
 }
 
 .card-blog .post-date {
-    font-size: 13px;
+    font-size: 15px;
     color: #B4B2C5;
 }
 
@@ -1843,6 +1848,7 @@ a.text-dark:focus {
     margin-bottom: 10px;
     margin-top: 20px;
     font-size: 22px;
+    margin-left: 10px;
     font-weight: bold;
 }
 
@@ -2089,6 +2095,12 @@ a.text-dark:focus {
     color: #212529;
 }
 
+.img-container {
+    display: block;
+    max-width: 450px;
+    max-height: 300px;
+}
+
 .blog-single-wrap .post-meta {
     display: block;
     margin-bottom: 24px;
@@ -2114,6 +2126,8 @@ a.text-dark:focus {
 .blog-single-wrap .post-meta .post-date a,
 .blog-single-wrap .post-meta .post-comment-count a {
     color: #645F88;
+    font-size: 20px;
+    font-weight: 500;
 }
 
 .blog-single-wrap .post-content .quote {
@@ -2139,6 +2153,11 @@ a.text-dark:focus {
     border-radius: 6px;
     border: 1px solid #EDECF5;
     box-shadow: 0 3px 9px rgba(100, 95, 136, 0.15);
+}
+
+.categories img {
+    margin-right: 12px;
+    margin-bottom: 10px;
 }
 
 .widget-title {

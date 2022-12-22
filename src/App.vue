@@ -1,18 +1,19 @@
 <template>
-  <transition name="fade" mode="out-in">
-    <router-view :blog = "blog" />
-</transition>
+<router-view :blog = "blog" />
 </template>
 
 <script>
 
-import Blog from './data/data.js'; 
+import Blog from './data/data.js';
+import ProjectData from './data/projects.js';
+
 
 export default {
   name: 'App',
   data() {
     return {
       blog : Blog,
+      project: ProjectData,
     }
   },
   components: {}
@@ -20,14 +21,4 @@ export default {
 </script>
 
 <style>
-fade-enter-active,
-.fade-leave-active {
-  transition-duration: 0.3s;
-  transition-property: opacity;
-  transition-timing-function: ease;
-}
-.fade-enter,
-.fade-leave-active {
-  opacity: 0;
-}
 </style>

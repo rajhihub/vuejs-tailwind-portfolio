@@ -20,6 +20,8 @@
     </div>
   </div>
 
+  <Services/>
+
   <div class="page-section">
     <div class="container">
       <div class="row my-5 card-blog-row">
@@ -40,58 +42,82 @@
               </div>
             </div>
             <div class="footer">
-              <a href="blog-single.html"
+              <router-link to="/projects"
                 >Discover <span class="mai-chevron-forward text-sm"></span
-              ></a>
+              ></router-link>
             </div>
           </div>
         </div>
 
         <div
-          v-for="(a, i) in blog"
+          v-for="(a, i) in project"
           :key="a"
-          class="col-md-5 col-lg-3 py-3 wow fadeInUp">
-
+          class="col-md-5 col-lg-3 py-3 wow fadeInUp"
+        >
           <div class="card-blog">
-            <div class="body">
-              <div class="card" style ="max-width : 300px; max-height : 200px;">
-                <img :src="blog[i].image" />
+            <div
+              class="card"
+              style="
                 
-              </div>
+                max-width: 320px;
+                max-height: 200px;
+               
+              "
+            >
+              <img :src="project[i].image" />
+            </div>
 
+            <div class="body">
               <div class="post-title">
-                <a>{{ blog[i].title }}</a>
+                <a>{{ project[i].name }}</a>
               </div>
               <div class="post-excerpt">
-                {{ blog[i].intro }}
+                {{ project[i].content }}
               </div>
             </div>
 
             <div class="footer">
-              
-             
-              <a href="blog-single.html"
-                >Read More <span class="mai-chevron-forward text-sm"></span
-              ></a>
+              <div class="techs" style="padding-bottom: 25px;">
+                <img :src="project[i].tech1" />
+                <img :src="project[i].tech2" />
+                <img :src="project[i].tech3" />
+              </div>
+              <router-link to='/singleproject' 
+                >Learn More <span class="mai-chevron-forward text-sm"></span
+              ></router-link>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
+
+  <Footer/>
+
 </template>
 
 <script>
+import ProjectData from '../data/projects.js'
+
 import Navbar from '../components/Navbar'
+import Services from '../components/Services'
+import Footer from '../components/Footer'
+
+
 
 export default {
   name: 'Project Page',
+  data () {
+    return {
+      project: ProjectData
+    }
+  },
 
   props: {
     blog: Array
   },
 
-  components: { Navbar }
+  components: { Navbar,Services, Footer }
 }
 </script>
 

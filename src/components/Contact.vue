@@ -1,4 +1,8 @@
+
 <template>
+
+<Navbar/>
+
   <div class="page-section">
     <div class="container">
       <div class="row align-items-center">
@@ -54,10 +58,23 @@
     </div>
     <!-- .container -->
   </div>
+
+<Footer/>
+
 </template>
 
 <script>
-export default {}
+import Navbar from './Navbar.vue';
+import Footer from './Footer.vue';
+
+export default {
+  name : 'Contact',
+
+  components: {
+    Navbar :Navbar,
+    Footer : Footer,
+  } 
+}
 </script>
 
 <style></style>
