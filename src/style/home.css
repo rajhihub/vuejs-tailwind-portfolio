@@ -1500,6 +1500,16 @@ a.text-dark:focus {
     border-radius: 30px;
 }
 
+.page-banner2 {
+    position: relative;
+    margin-top: 200px;
+    margin-bottom: 100px;
+    height: 500px;
+    background-color: #fcf5fa;
+    color: #645F88;
+    border-radius: 20px;
+}
+
 .page-banner.home-banner {
     margin-top: 100px;
     height: auto;

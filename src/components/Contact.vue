@@ -59,7 +59,7 @@
     <!-- .container -->
   </div>
 
-<Footer/>
+
 
 </template>
 

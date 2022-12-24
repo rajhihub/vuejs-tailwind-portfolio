@@ -9,6 +9,11 @@ import Allblogs from '../components/Allblogs.vue';
 import SingleBlog from "../components/SingleBlog.vue";
 import SingleProject from "../components/SingleProject.vue";
 
+import Login from '../firebase/Login.vue';
+import Signup from '../firebase/Signup.vue';
+import Dashboard from '../firebase/Dashboard.vue';
+
+
 
 const routes = [{
         path: "/",
@@ -42,7 +47,18 @@ const routes = [{
         path: "/singleproject",
         component: SingleProject,
     },
-
+    {
+        path: "/login",
+        component: Login,
+    },
+    {
+        path: "/signup",
+        component: Signup,
+    },
+    {
+        path: "/dashboard",
+        component: Dashboard,
+    },
 ];
 
 const router = createRouter({
