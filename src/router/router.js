@@ -12,6 +12,8 @@ import SingleProject from "../components/SingleProject.vue";
 import Login from '../firebase/Login.vue';
 import Signup from '../firebase/Signup.vue';
 import Dashboard from '../firebase/Dashboard.vue';
+import Upload from "../firebase/Upload.vue";
+
 
 
 
@@ -59,7 +61,12 @@ const routes = [{
         path: "/dashboard",
         component: Dashboard,
     },
+    {
+        path: "/upload",
+        component: Upload,
+    },
 ];
+
 
 const router = createRouter({
     history: createWebHistory(),

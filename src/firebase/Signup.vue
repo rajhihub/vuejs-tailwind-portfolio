@@ -72,6 +72,12 @@ export default {
       password: ''
     }
   },
+
+  components :{
+    Navbar,
+  },
+
+
   methods: {
     signUp () {
       firebase

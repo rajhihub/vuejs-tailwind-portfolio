@@ -1502,9 +1502,10 @@ a.text-dark:focus {
 
 .page-banner2 {
     position: relative;
-    margin-top: 200px;
+    margin-top: 150px;
     margin-bottom: 100px;
-    height: 500px;
+    height: auto;
+    padding: 15px;
     background-color: #fcf5fa;
     color: #645F88;
     border-radius: 20px;
