@@ -11,8 +11,7 @@
           <div class="input-group flex-nowrap mt-3">
             <span class="input-group-text" id="addon-wrapping">#</span>
             <input
-             v-model="email"
-
+              v-model="email"
               type="email"
               class="form-control"
               placeholder="Email"
@@ -24,7 +23,7 @@
           <div class="input-group flex-nowrap mt-3">
             <span class="input-group-text" id="addon-wrapping">#</span>
             <input
-             v-model="password"
+              v-model="password"
               type="password"
               class="form-control"
               placeholder="Password"
@@ -34,7 +33,7 @@
           </div>
           <div class="text-center">
             <button
-             v-on:click="signUp"
+              v-on:click="signUp"
               type="button"
               class="btn btn-primary btn-lg align-items-center mt-5 px-5 fw-md"
             >
@@ -69,7 +68,8 @@ export default {
   data () {
     return {
       email: '',
-      password: ''
+      password: '',
+      username : '',
     }
   },
 
@@ -78,7 +78,7 @@ export default {
   },
 
 
-  methods: {
+ /*  methods: {
     signUp () {
       firebase
         .auth()
@@ -92,9 +92,24 @@ export default {
           }
         )
     }
+  } */
+
+
+methods : {
+  signUp () {
+    firebase.auth().onAuthStateChanged(function(user){
+      if(user) {
+        var username = user.displayName;
+        var email = user.email;
+        var username = user.username;
+      }
+    })
   }
+
+},
+
+ 
 }
 </script>
-
 
 <style></style>

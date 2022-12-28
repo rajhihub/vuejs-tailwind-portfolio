@@ -79,6 +79,11 @@
             >
           </div>
 
+          <div class="cont mt-3">
+       
+            <textarea id="my-text" rows="15" placeholder="Content"></textarea>
+          </div>
+
           
 
           <div class="text-center">
@@ -87,16 +92,12 @@
               type="button"
               class="btn btn-primary btn-lg align-items-center mt-5 px-5 fw-md"
             >
-              Sign Up
+             Upload
             </button>
           </div>
 
           <div class="text-center mt-4">
-            <p class="px-4">
-              Don't have an account?<router-link to="/login">
-                Start Now</router-link
-              >
-            </p>
+            
           </div>
         </div>
       </div>
@@ -119,4 +120,17 @@ export default {
 }
 </script>
 
-<style></style>
+<style>
+
+
+textarea{
+  display: block;
+  width: 100%;
+  padding: 20px;
+  resize: none;
+  color: #202020;
+  border: 1px solid #b2b2b2;
+  border-radius: 5px; 
+}
+
+</style>

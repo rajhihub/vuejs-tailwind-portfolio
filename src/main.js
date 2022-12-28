@@ -8,6 +8,8 @@ import router from './router/router.js';
 import './data/projects.js';
 import './style/home.css';
 
+
+
 import firebase from "firebase/compat/app";
 import "firebase/compat/auth";
 import "firebase/compat/firestore";

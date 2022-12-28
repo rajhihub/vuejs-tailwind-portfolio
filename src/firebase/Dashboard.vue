@@ -1,57 +1,61 @@
 <template>
-   <span class="bckg"></span>
-<header>
-  <h1>Dashboard</h1>
-  <nav>
-    <ul>
-      <li>
-        <a href="javascript:void(0);" data-title="Projects">Projects</a>
-      </li>
-      <li>
-        <a href="javascript:void(0);" data-title="Team">Team</a>
-      </li>
-      <li>
-        <a href="javascript:void(0);" data-title="Diary">Diary</a>
-      </li>
-      <li>
-        <a href="javascript:void(0);" data-title="Timeline">Timeline</a>
-      </li>
-      <li>
-        <a href="javascript:void(0);" data-title="Settings">Settings</a>
-      </li>
-      <li>
-        <a href="javascript:void(0);" data-title="Search">Search</a>
-      </li>
-    </ul>
-  </nav>
-</header>
-<main>
-  <div class="title">
-    <h2>Projects</h2>
-    <a href="javascript:void(0);">Hello Bob !</a>
-  </div>
+  <Navbar />
 
-  <article class="larg">
-    <div>
-      <h3>Project 1 <span class="entypo-down-open"></span></h3>
+  <div class="container mt-5">
+    <div class="page-banner1">
+      <div class="row justify-content-center align-items-center h-100">
+        <div class="col-md-6">
+          <nav aria-label="Breadcrumb">
+            <ul class="breadcrumb justify-content-center py-0 bg-transparent">
+              <li class="breadcrumb-item">
+                <router-link to="/">Home</router-link>
+              </li>
+              <li class="breadcrumb-item active">Dashboard</li>
+            </ul>
+          </nav>
+          <h1 class="text-center">Login Info</h1>
+          <div id="firebase-auth-container"></div>
+        </div>
       </div>
-    <div>
-      <h3>Project 2 <span class="entypo-down-open"></span></h3>
-       </div>
-    <div>
-      <h3>Project 3 <span class="entypo-down-open"></span></h3>
-       </div>
-  </article>
-</main>
-
+    </div>
+  </div>
 </template>
 
 <script>
-export default {
+import Navbar from '../components/Navbar'
 
+import firebase from 'firebase/compat/app'
+import 'firebase/compat/auth'
+import 'firebase/compat/firestore'
+
+export default {
+  components: {
+    Navbar
+  },
+
+  methods: {
+    initUI: function () {
+      ui.start('#firebase-auth-container', {
+        signInoptions: [firebase.auth.EmailAuthProvider.PROVIDER_ID],
+        callbacks: {
+          signInSuccessWithAuthResult: (authResult, redirectUrl) => {
+            alert(`${authResult.user.displayName}login Done!`)
+            return false
+          }
+        }
+      })
+    }
+  },
+
+  mounted: function () {
+    auth.onAuthStateChanged(user => {
+      if (user) {
+        alert('이미 로그인 한 사용자입니다!')
+      }
+      this.initUI()
+    })
+  }
 }
 </script>
 
-<style>
-
-</style>
+<style></style>
