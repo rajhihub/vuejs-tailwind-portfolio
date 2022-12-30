@@ -11,6 +11,20 @@
           <div class="input-group flex-nowrap mt-3">
             <span class="input-group-text" id="addon-wrapping">#</span>
             <input
+              v-model="username"
+              type="email"
+              class="form-control"
+              placeholder="Username"
+              aria-label="Username"
+              aria-describedby="addon-wrapping"
+            />
+          </div>
+
+          
+
+          <div class="input-group flex-nowrap mt-3">
+            <span class="input-group-text" id="addon-wrapping">#</span>
+            <input
               v-model="email"
               type="email"
               class="form-control"
