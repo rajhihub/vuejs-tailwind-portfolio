@@ -8,20 +8,20 @@
           <nav aria-label="Breadcrumb"></nav>
           <h1 class="text-center">Registration</h1>
 
-          <div class="input-group flex-nowrap mt-3">
-            <span class="input-group-text" id="addon-wrapping">#</span>
-            <input
-              v-model="username"
-              type="email"
-              class="form-control"
-              placeholder="Username"
-              aria-label="Username"
-              aria-describedby="addon-wrapping"
-            />
+          <div class="google">
+            <div class="google-button" @click="socialLogin">
+              <img
+                class="google-icon mx-2"
+                href="#"
+                src="../images/google.png"
+                alt="Image alt"
+                style="width: 25px; height: 25px"
+              />
+              <button @click="googleSignIn" class="btn-primary google-word">
+                Continue with Google
+              </button>
+            </div>
           </div>
-
-          
-
           <div class="input-group flex-nowrap mt-3">
             <span class="input-group-text" id="addon-wrapping">#</span>
             <input
@@ -69,13 +69,11 @@
 </template>
 
 <script>
-import Navbar from "../components/Navbar"
+import Navbar from '../components/Navbar'
 
-import firebase from "firebase/compat/app";
-import "firebase/compat/auth";
-import "firebase/compat/firestore";
-
-
+import firebase from 'firebase/compat/app'
+import 'firebase/compat/auth'
+import 'firebase/compat/firestore'
 
 export default {
   name: 'signUp',
@@ -83,16 +81,15 @@ export default {
     return {
       email: '',
       password: '',
-      username : '',
+      username: ''
     }
   },
 
-  components :{
-    Navbar,
+  components: {
+    Navbar
   },
 
-
- /*  methods: {
+  methods: {
     signUp () {
       firebase
         .auth()
@@ -105,24 +102,24 @@ export default {
             alert('Error : ' + err.message)
           }
         )
+    },
+
+    googleSignIn: function () {
+      let provider = new firebase.auth.GoogleAuthProvider()
+      firebase
+        .auth()
+        .signInWithPopup(provider)
+        .then(result => {
+          let token = result.credential.accessToken
+          let user = result.user
+          console.log(token)
+          console.log(user)
+        })
+        .catch(err => {
+          console.log(err)
+        })
     }
-  } */
-
-
-methods : {
-  signUp () {
-    firebase.auth().onAuthStateChanged(function(user){
-      if(user) {
-        var username = user.displayName;
-        var email = user.email;
-        var username = user.username;
-      }
-    })
   }
-
-},
-
- 
 }
 </script>
 
