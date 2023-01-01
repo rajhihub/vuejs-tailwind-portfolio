@@ -8,20 +8,6 @@
           <nav aria-label="Breadcrumb"></nav>
           <h1 class="text-center">Registration</h1>
 
-          <div class="google">
-            <div class="google-button" @click="socialLogin">
-              <img
-                class="google-icon mx-2"
-                href="#"
-                src="../images/google.png"
-                alt="Image alt"
-                style="width: 25px; height: 25px"
-              />
-              <button @click="googleSignIn" class="btn-primary google-word">
-                Continue with Google
-              </button>
-            </div>
-          </div>
           <div class="input-group flex-nowrap mt-3">
             <span class="input-group-text" id="addon-wrapping">#</span>
             <input
@@ -35,7 +21,7 @@
           </div>
 
           <div class="input-group flex-nowrap mt-3">
-            <span class="input-group-text" id="addon-wrapping">#</span>
+            <span class="input-group-text" id="addon-wrapping">*</span>
             <input
               v-model="password"
               type="password"
@@ -44,6 +30,21 @@
               aria-label="Password"
               aria-describedby="addon-wrapping"
             />
+          </div>
+
+          <div class="google text-center mt-5">
+            <div class="google-button">
+              <img
+                class="google-icon mx-2"
+                href="#"
+                src="../images/google.png"
+                alt="Image alt"
+                style="width: 25px; height: 25px"
+              />
+              <button @click="googleSignIn" class="btn-primary google-word">
+                Continue with Google
+              </button>
+            </div>
           </div>
           <div class="text-center">
             <button
@@ -57,9 +58,8 @@
 
           <div class="text-center mt-4">
             <p class="px-4">
-              Don't have an account?<router-link to="/login">
-                Start Now</router-link
-              >
+              Don't have an account?
+              <router-link to="/login">Start Now</router-link>
             </p>
           </div>
         </div>
@@ -74,6 +74,12 @@ import Navbar from '../components/Navbar'
 import firebase from 'firebase/compat/app'
 import 'firebase/compat/auth'
 import 'firebase/compat/firestore'
+
+import {
+  createUserWithEmailAndPassword,
+  getAuth,
+  sendEmailVerification
+} from 'firebase/auth'
 
 export default {
   name: 'signUp',
@@ -94,10 +100,13 @@ export default {
       firebase
         .auth()
         .createUserWithEmailAndPassword(this.email, this.password)
+
         .then(
-          function (user) {
-            alert('Congrats')
+          user => {
+            alert('Registration Successfully^^!!')
+            this.$router.replace('login')
           },
+
           function (err) {
             alert('Error : ' + err.message)
           }
@@ -110,6 +119,8 @@ export default {
         .auth()
         .signInWithPopup(provider)
         .then(result => {
+         alert('Registration Successfully^^!!')
+         this.$router.replace('login')
           let token = result.credential.accessToken
           let user = result.user
           console.log(token)

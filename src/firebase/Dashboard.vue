@@ -1,6 +1,5 @@
 <template>
   <Navbar />
-
   <div class="container mt-5">
     <div class="page-banner1">
       <div class="row justify-content-center align-items-center h-100">
@@ -14,7 +13,12 @@
             </ul>
           </nav>
           <h1 class="text-center">Login Info</h1>
-          <div id="firebase-auth-container"></div>
+          <h4 id="user-email" class = "text-center mt-5">{{isEmail}}</h4>
+          <div class="text-center mt-4">
+            <button @click="signout" class="btn btn-primary mt-5 px-4">
+              Logout
+            </button>
+          </div>
         </div>
       </div>
     </div>
@@ -23,37 +27,60 @@
 
 <script>
 import Navbar from '../components/Navbar'
-
 import firebase from 'firebase/compat/app'
 import 'firebase/compat/auth'
 import 'firebase/compat/firestore'
+import {
+  createUserWithEmailAndPassword,
+  getAuth,
+  sendEmailVerification
+} from 'firebase/auth'
 
 export default {
+  data () {
+    return {
+      email: '',
+      password: '',
+      isEmail : '',
+     
+    }
+  },
+
+  created: () => {
+    var user = firebase.auth().currentUser;
+    console.log(user);
+
+     firebase.auth().onAuthStateChanged(function(user) {
+      if (user) {
+       this.isEmail == user.email
+        
+      } else {
+
+      }
+    });
+
+    
+
+  },
+
+
   components: {
     Navbar
   },
 
   methods: {
-    initUI: function () {
-      ui.start('#firebase-auth-container', {
-        signInoptions: [firebase.auth.EmailAuthProvider.PROVIDER_ID],
-        callbacks: {
-          signInSuccessWithAuthResult: (authResult, redirectUrl) => {
-            alert(`${authResult.user.displayName}login Done!`)
-            return false
-          }
-        }
-      })
+    signout () {
+      firebase
+        .auth()
+        .signOut()
+        .then(user => {
+          alert('Logout Successfully')
+          this.$router.replace('/')
+        })
+        .catch(error => {
+          alert('Error : ' + err.message)
+        })
     }
-  },
-
-  mounted: function () {
-    auth.onAuthStateChanged(user => {
-      if (user) {
-        alert('이미 로그인 한 사용자입니다!')
-      }
-      this.initUI()
-    })
   }
 }
 </script>
