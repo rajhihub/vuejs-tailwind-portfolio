@@ -44,8 +44,8 @@
               </div>
             </div>
             <div class="footer">
-              <router-link to ="/singleblog" >Read More <span class="mai-chevron-forward text-sm"></span
-              ></router-link>
+              <a href ="https://prmblogs.tistory.com/" >Read More <span class="mai-chevron-forward text-sm"></span
+              ></a>
             </div>
 
           </div>

@@ -41,11 +41,9 @@ export default {
     return {
       email: '',
       password: '',
-      isEmail : '',
-     
+      isEmail : '',     
     }
   },
-
   created: () => {
     var user = firebase.auth().currentUser;
     console.log(user);
@@ -58,9 +56,6 @@ export default {
 
       }
     });
-
-    
-
   },
 
 
@@ -85,4 +80,5 @@ export default {
 }
 </script>
 
-<style></style>
+<style>
+</style>

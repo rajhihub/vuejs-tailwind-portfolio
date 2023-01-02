@@ -1,84 +1,42 @@
 export default [{
-        username: "Anaskhon",
-        date: "20th October, 2022",
-        profile: "https://picsum.photos/44",
-        title: "ReactJs vs VueJs",
-        intro: "Lets compare two most popular Java Script frameworks, ReactJs anf VueJs",
-        image: "https://placeimg.com/300/200/nature",
-        content: `Vuejs Ui 만들때 페이지 이동이나 알림장 나오는 경우 부드럽게 애니메이션 만들어봤다 . Vue에서 제공하는 <transition> 태그를 이용하고 쉽에 만들수 있다
-    이건 지성이 필요없는 개발하고 싶을 때 사용한다. 일단 오픈하기 위해 다음 2 단계만 있으면 된다.
-    애니메이션 주고 싶은 UI를 으로 감싼다.`,
-        start: "자바스크립트 (이하 js) 기반으로 만들어진 웹 개발을 위한 2세대 프레임워크들 중에 하나다. 일반적으로 js 프레임워크들은 - js에 대해서 어느정도는 이해를 해야만 사용할 수 있는 경우가 대부분이다.",
-
-        code1: '<transition name="fade"></transition>',
-        code2: ".fade-enter-from { 애니메이션 동작 전 상태 , opasity: 0 }",
-        code3: ".fade-enter-active { 애니메이션 동작 중 상태, transition : all 1s;}",
-        code4: ".fade-enter-to { 애니메이션 동작 후 상태 , opasity : 1; }",
+        username: "Prime Blogs",
+        date: "2023.01.01",
+        profile: "https://tistory1.daumcdn.net/tistory/5878727/attach/cc3e9f7f252c43ed8768b5a1b83623ad",
+        title: " VuejS vs Tailwind CSS ",
+        image: "https://placeimg.com/300/200/archhttps://img1.daumcdn.net/thumb/R750x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbM2IEB%2FbtrU38Cp9GV%2FtVzE4j0D9VY7qbqKAABIy0%2Fimg.jpg",
+        intro: "Tailwind CSS 설치 및 VUEJS 프로젝트 적용하는 방법",
     },
 
     {
-        username: "Aaron Prime",
-        date: "22th October, 2022",
-        profile: "https://picsum.photos/seed/picsum/44",
-        title: "VueJs Animation",
-        image: "https://placeimg.com/300/200/arch",
+        username: "Prime Blogs",
+        date: "2022.12.30",
+        profile: "https://tistory1.daumcdn.net/tistory/5878727/attach/cc3e9f7f252c43ed8768b5a1b83623ad",
 
-        intro: " VueJs is super fast framework as NextJs. Today we learn animation on VueJs Project ",
+        title: "VueJs List Rendering",
+        image: "https://img1.daumcdn.net/thumb/R750x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FdNu4Zm%2FbtrUVkpGuUd%2Fx41U7clwnGukxCQW25STsK%2Fimg.png",
+
+        intro: "VueJs List Rendering [ 리스트 렌더링 ] 하는 법",
     },
 
     {
-        username: "Anaskhon",
-        date: "30th October, 2022",
-        profile: "https://placeimg.com/300/200/any",
-        title: "VueJs and Github",
-        image: "https://placeimg.com/300/200/people",
-        intro: " GitHub is a website and cloud-based service that helps developers store",
+        username: "Prime Blogs",
+        date: "2022.12.26",
+        profile: "https://tistory1.daumcdn.net/tistory/5878727/attach/cc3e9f7f252c43ed8768b5a1b83623ad",
+
+        title: "Vuejs Firebase 연동 ",
+        image: "https://placeimg.com/300/200/archhttps://img1.daumcdn.net/thumb/R750x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbM2IEB%2FbtrU38Cp9GV%2FtVzE4j0D9VY7qbqKAABIy0%2Fimg.jpg",
+
+        intro: "Vuejs Firebase 연동 오류 해결 v9버전, 2023 [solved ]",
     },
 
     {
-        username: "Anaskhon",
-        date: "20th October, 2022",
-        profile: "https://placeimg.com/300/200/any",
-        title: "ReactJs vs VueJs",
-        intro: "Lets compare two most popular Java Script frameworks, ReactJs anf VueJs",
-        image: "https://placeimg.com/300/200/tech",
-    },
+        username: "Prime Blogs",
+        date: "2023.01.01",
+        profile: "https://tistory1.daumcdn.net/tistory/5878727/attach/cc3e9f7f252c43ed8768b5a1b83623ad",
 
-    {
-        username: "Aaron Prime",
-        date: "22th October, 2022",
-        profile: "https://placeimg.com/300/200/any",
-        title: "VueJs Animation",
-        image: "https://placeimg.com/300/200/any",
+        title: "VUe 알림장창 만들기 ",
+        image: "https://miro.medium.com/max/828/0*L2GGz8fwNA_IZcFb.webp",
 
-        intro: " VueJs is super fast framework as NextJs. Today we learn animation on VueJs Project ",
-    },
-
-    {
-        username: "Anaskhon",
-        date: "30th October, 2022",
-        profile: "https://placeimg.com/300/200/any",
-        title: "VueJs and Github",
-        image: "https://placeimg.com/300/200/people",
-        intro: " GitHub is a website and cloud-based service that helps developers store",
-    },
-
-    {
-        username: "Anaskhon",
-        date: "20th October, 2022",
-        profile: "https://placeimg.com/300/200/any",
-        title: "ReactJs vs VueJs",
-        intro: "Lets compare two most popular Java Script frameworks, ReactJs anf VueJs",
-        image: "https://placeimg.com/300/200/tech",
-    },
-
-    {
-        username: "Aaron Prime",
-        date: "22th October, 2022",
-        profile: "https://placeimg.com/300/200/any",
-        title: "VueJs Animation",
-        image: "https://placeimg.com/300/200/any",
-
-        intro: " VueJs is super fast framework as NextJs. Today we learn animation on VueJs Project ",
+        intro: "V-If 사용해 Vue에서 동적인 UI 만드는 법)",
     },
 ];

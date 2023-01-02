@@ -16,8 +16,14 @@ export default {
       project: ProjectData,
     }
   },
-  components: {}
+  components: {},
+
+  mounted () { window.scrollTo(0, 0) }
+
 }
+
+
+
 </script>
 
 <style>

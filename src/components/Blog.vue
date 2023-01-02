@@ -26,7 +26,7 @@
               </div>
             </div>
             <div class="footer">
-              <a href="blog-single.html"
+              <a href="https://prmblogs.tistory.com" 
                 >Discover <span class="mai-chevron-forward text-sm"></span
               ></a>
             </div>
@@ -56,8 +56,7 @@
               </div>
             </div>
             <div class="footer">
-              <a href="blog-single.html"
-                >Read More <span class="mai-chevron-forward text-sm"></span
+              <a href="https://prmblogs.tistory.com/">Read More <span class="mai-chevron-forward text-sm"></span
               ></a>
             </div>
           </div>
@@ -66,7 +65,7 @@
       </div>
 
       <div class="text-center">
-        <router-link to="/blogs" class="btn btn-outline-primary rounded-pill"
+        <router-link to="/blog" class="btn btn-outline-primary rounded-pill"
           >Discover More</router-link
         >
       </div>

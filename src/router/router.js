@@ -16,7 +16,6 @@ import Upload from "../firebase/Upload.vue";
 
 
 
-
 const routes = [{
         path: "/",
         component: Home,
@@ -46,7 +45,7 @@ const routes = [{
         component: SingleBlog,
     },
     {
-        path: "/singleproject",
+        path: "/singleproject/:id",
         component: SingleProject,
     },
     {

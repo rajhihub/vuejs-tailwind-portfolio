@@ -66,6 +66,9 @@
       </div>
     </div>
   </div>
+
+
+  
 </template>
 
 <script>
@@ -87,7 +90,8 @@ export default {
     return {
       email: '',
       password: '',
-      username: ''
+      username: '',
+      alertBox : false,
     }
   },
 
