@@ -1178,8 +1178,8 @@ a.text-dark:focus {
 
 .navbar-brand {
     font-weight: 600;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px;
+    margin: 10px;
 }
 
 .navbar-nav {
@@ -1476,8 +1476,7 @@ a.text-dark:focus {
     font-size: 17px;
     font-weight: 400;
     text-align: left;
-    margin-top: 15px;
-    margin-left: 30px;
+    margin: 15px 15px 10px 5px;
 }
 
 .page-banner {

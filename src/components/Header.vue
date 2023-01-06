@@ -29,7 +29,7 @@
   src="https://assets2.lottiefiles.com/packages/lf20_gnb0jsok.json"
   background="transparent"
   speed="1"
-  style="width: 500px; height: 500px"
+  style="max-width: 500px; max-height: 500px"
   autoplay
 ></lottie-player>
 

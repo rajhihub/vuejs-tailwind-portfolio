@@ -82,9 +82,8 @@
                 <img :src="project[i].tech2" />
                 <img :src="project[i].tech3" />
               </div>
-              <router-link to='/singleproject' 
-                >Learn More <span class="mai-chevron-forward text-sm"></span
-              ></router-link>
+              <button class ="btn" @click ="$router.push(`/singleproject/` + i)"> Learn More <span class="mai-chevron-forward text-sm"></span
+              ></button>
             </div>
           </div>
         </div>

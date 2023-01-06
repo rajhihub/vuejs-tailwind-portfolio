@@ -9,6 +9,9 @@ import Allblogs from '../components/Allblogs.vue';
 import SingleBlog from "../components/SingleBlog.vue";
 import SingleProject from "../components/SingleProject.vue";
 
+import PageNotFound from "../components/PageNotFound.vue";
+
+
 import Login from '../firebase/Login.vue';
 import Signup from '../firebase/Signup.vue';
 import Dashboard from '../firebase/Dashboard.vue';
@@ -64,12 +67,27 @@ const routes = [{
         path: "/upload",
         component: Upload,
     },
+
+    {
+        path: '/:catchAll(.*)*',
+        name: "PageNotFound",
+        component: PageNotFound,
+    },
 ];
+
+
+
 
 
 const router = createRouter({
     history: createWebHistory(),
     routes,
+    scrollBehavior(to, from, savedPosition) {
+        // always scroll to top
+        return { top: 0 }
+    },
+
+
 });
 
 export default router;

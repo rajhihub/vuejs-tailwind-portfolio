@@ -1,4 +1,5 @@
 <template>
+  
   <div class="page-section">
     <div class="container">
       <div class="row">
@@ -8,7 +9,7 @@
               src="https://assets2.lottiefiles.com/packages/lf20_qhrndegx.json"
               background="transparent"
               speed="1"
-              style="width: 500px; height: 500px"
+              style="max-width: 500px; max-height: 500px"
               autoplay
             ></lottie-player>
           </div>
@@ -18,12 +19,16 @@
             All About <span class="marked">Myself</span>
           </h2>
           <div class="divider"></div>
+          
+          <div v-scroll:#main="handleScroll">
           <p>
             I’m a Junior Front-End Developer located in South Korea. I learn a
             serious passion for UI effects, animations and creating intuitive,
             dynamic user experiences.
           </p>
+          </div>
 
+          <div>
           <p>
             I'm a well organized person, problem solver, independent employee
             with high attention to detail. Fan of Football and Boxing, outdoor
@@ -31,11 +36,14 @@
             Actually, I have been living in South Korea for 5 years so I almost
             native in Korean.
           </p>
+          </div>
 
+          <div>
           <p>
             And I'm interested in the entire creative frontend spectrum and
             working on ambitious projects with positive people.
           </p>
+          </div>
 
           <div class="img-place mb-3"></div>
           <a href="#" class="btn btn-primary">More Details</a>
@@ -88,7 +96,7 @@
               src="https://assets2.lottiefiles.com/packages/lf20_u4jjb9bd.json"
               background="transparent"
               speed="0.5"
-              style="width: 550px; height: 550px"
+              style="max-width: 550px; max-height: 550px"
               loop
               autoplay
             ></lottie-player>
@@ -98,10 +106,31 @@
     </div>
     <!-- .container -->
   </div>
+  
 </template>
 
 <script>
-export default {}
+export default {
+  data(){
+    return {
+      scrollPosition : 0,
+    }
+  },
+
+  methods:{
+    handleScroll(e){
+			this.scrollPosition = e.target.scrollTop;
+
+			if(this.scrollPosition > 100){
+				console.log("UP")
+			} else {
+				console.log("DOWN")
+			}
+
+		}
+
+  }
+}
 </script>
 
 <style>
