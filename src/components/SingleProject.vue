@@ -1,7 +1,9 @@
 <template>
   <Navbar />
 
-  <div class="page-section pt-5" style="margin-top: 100px">
+  <div class="">
+
+  <div class="page-section pt-5" style="">
     <div class="container">
       <nav aria-label="Breadcrumb">
         <ul class="breadcrumb p-0 mb-0 bg-transparent">
@@ -40,16 +42,16 @@
                 <p class="margin-top: 20px;">
                   {{ project[$route.params.id].content1 }}
                 </p>
-                <br />
+                
 
                 <p class="margin-top: 20px;">
                   {{ project[$route.params.id].content2 }}
                 </p>
-                <br />
+                
                 <p class="margin-top: 20px;">
                   {{ project[$route.params.id].content3 }}
                 </p>
-                <br />
+                
                 <div class="text-center mt-5">
                   <button class="btn btn-primary">
                     <a class="text-white" href="https://prmblogs.tistory.com/"
@@ -91,9 +93,6 @@
 
                 <li><a>FrontEnd</a></li>
                 <li><a>Web Application</a></li>
-                <!-- <li><a href="#">Healthy</a></li>
-                  <li><a href="#">Sports</a></li>
-                  <li><a href="#">Entertainment</a></li> -->
               </ul>
             </div>
 
@@ -102,12 +101,17 @@
               <h4 class="widget-title">Next Projects</h4>
               <div class="divider"></div>
 
-              <div v-for="(a, i) in 4" :key="a" class="blog-item" @click ="$router.push(`/singleproject/` + i)">
+              <div
+                v-for="(a, i) in 4"
+                :key="a"
+                class="blog-item"
+                @click="$router.push(`/singleproject/` + i)"
+              >
                 <a class="post-thumb" href="">
                   <img :src="project[i].image" />
                 </a>
                 <div class="content">
-                  <button  class="btn text-black post-title">
+                  <button class="btn text-black post-title">
                     <a>{{ project[i].name }}</a>
                   </button>
                   <div class="meta">
@@ -115,8 +119,6 @@
                       ><span class="mai-calendar"></span
                       >{{ project[i].content }}</a
                     >
-                    <!-- <a href="#"><span class="mai-person"></span> Admin</a>
-                        <a href="#"><span class="mai-chatbubbles"></span> 19</a> -->
                   </div>
                 </div>
               </div>
@@ -125,6 +127,8 @@
         </div>
       </div>
     </div>
+  </div>
+
   </div>
 
   <Footer />

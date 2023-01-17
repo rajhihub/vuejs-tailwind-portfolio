@@ -7,6 +7,7 @@ import "bootstrap";
 import router from './router/router.js';
 import './data/projects.js';
 import './style/home.css';
+import './style/tailwind.css';
 
 import firebase from "firebase/compat/app";
 import "firebase/compat/auth";

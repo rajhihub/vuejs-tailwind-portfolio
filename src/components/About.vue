@@ -1,10 +1,11 @@
 <template>
   
-  <div class="page-section">
+  <div class="page-section -mb-5">
     <div class="container">
       <div class="row">
         <div class="col-lg-6 py-3 wow zoomIn">
-          <div class="img-place text-center">
+          
+          <div class="img-place text-center hidden lg:flex">
             <lottie-player
               src="https://assets2.lottiefiles.com/packages/lf20_qhrndegx.json"
               background="transparent"
@@ -14,8 +15,8 @@
             ></lottie-player>
           </div>
         </div>
-        <div class="col-lg-6 py-3 wow fadeInRight">
-          <h2 class="title-section">
+        <div class="col-lg-6 p-4">
+          <h2 class="title-section text-2xl">
             All About <span class="marked">Myself</span>
           </h2>
           <div class="divider"></div>
@@ -39,7 +40,7 @@
           </div>
 
           <div>
-          <p>
+          <p class="hidden lg:flex">
             And I'm interested in the entire creative frontend spectrum and
             working on ambitious projects with positive people.
           </p>
@@ -58,9 +59,9 @@
   <div class="page-section">
     <div class="container">
       <div class="row">
-        <div class="col-lg-6 py-3 wow fadeInLeft">
-          <h2 class="title-section">
-            My <span class="marked">Skills & Experiences </span>
+        <div class="col-lg-6 p-4 -mt-9 lg:mt-0">
+          <h2 class="title-section text-2xl">
+            My <span class="marked ">Skills & Experiences </span>
           </h2>
           <div class="divider"></div>
           <p class="mb-4">
@@ -76,7 +77,7 @@
             apps,features, animations, and coding interactive. layouts.
           </p>
 
-          <p class="mb-5">
+          <p class="mb-5 hidden lg:flex">
             I also have experiences with building Nft Smart Contract and
             Blockchain Solutions as freelancer developer in South Korea. Since
             beginning my journey as a freelance developer nearly 10 months ago,

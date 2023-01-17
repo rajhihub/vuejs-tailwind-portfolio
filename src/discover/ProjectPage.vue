@@ -20,7 +20,7 @@
     </div>
   </div>
 
-  <Services/>
+  <Services />
 
   <div class="page-section">
     <div class="container">
@@ -55,15 +55,7 @@
           class="col-md-5 col-lg-3 py-3 wow fadeInUp"
         >
           <div class="card-blog">
-            <div
-              class="card"
-              style="
-                
-                max-width: 320px;
-                max-height: 200px;
-               
-              "
-            >
+            <div class="card" style="max-width: 320px; max-height: 200px">
               <img :src="project[i].image" />
             </div>
 
@@ -77,13 +69,14 @@
             </div>
 
             <div class="footer">
-              <div class="techs" style="padding-bottom: 25px;">
+              <div class="techs" style="padding-bottom: 25px">
                 <img :src="project[i].tech1" />
                 <img :src="project[i].tech2" />
                 <img :src="project[i].tech3" />
               </div>
-              <button class ="btn" @click ="$router.push(`/singleproject/` + i)"> Learn More <span class="mai-chevron-forward text-sm"></span
-              ></button>
+              <button class="btn" @click="$router.push(`/singleproject/` + i)">
+                Learn More <span class="mai-chevron-forward text-sm"></span>
+              </button>
             </div>
           </div>
         </div>
@@ -91,8 +84,7 @@
     </div>
   </div>
 
-  <Footer/>
-
+  <Footer />
 </template>
 
 <script>
@@ -101,8 +93,6 @@ import ProjectData from '../data/projects.js'
 import Navbar from '../components/Navbar'
 import Services from '../components/Services'
 import Footer from '../components/Footer'
-
-
 
 export default {
   name: 'Project Page',
@@ -116,7 +106,7 @@ export default {
     blog: Array
   },
 
-  components: { Navbar,Services, Footer }
+  components: { Navbar, Services, Footer }
 }
 </script>
 

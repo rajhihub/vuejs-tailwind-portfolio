@@ -7,15 +7,15 @@
   <div class="page-section">
     <div class="container">
       <div class="text-center wow fadeInUp">
-        <div class="subhead">Personality as Developer</div>
+        <div class="text-2xl mb-3">Personality as Developer</div>
         <h3 class="title-section">
-          <span class="marked">"Slow and Steady </span>win the Rase"
+          <span class="marked">"Slow and Steady </span>Win The Rase"
         </h3>
         <div class="divider mx-auto"></div>
       </div>
 
       <div class="row mt-5 text-center">
-        <div class="col-lg-4 py-3 wow fadeInUp">
+        <div class="col-lg-4 p-3">
           <lord-icon
             src="https://cdn.lordicon.com/dfxesbyu.json"
             trigger="hover"
@@ -23,8 +23,8 @@
           >
           </lord-icon>
 
-          <h5>Problem Solving</h5>
-          <p>
+          <h5 >Problem Solving</h5>
+          <p class="text-center text-base lg:text-sm">
             In my opinion In software development, problem-solving is a one of
             the most important part of the work. Problem-solving also has to do
             with utilizing creativity and logical thought processes to identify
@@ -40,7 +40,7 @@
           </lord-icon>
 
           <h5>Quick Learning</h5>
-          <p>
+          <p class="text-center text-base lg:text-sm">
             And I also think Best software developers are often fantastic
             self-learners.The ideal skill any person can have is understanding
             how to learn, and ideal developers have acquired the skill of
@@ -56,7 +56,7 @@
           </lord-icon>
 
           <h5>Honesty</h5>
-          <p>
+          <p class="text-center text-base lg:text-sm">
             Software developers need to learn to admit their mistakes. Of
             course, making a mistake occurs to all of us. The most important
             thing to do is to make an effort to learn from them and try to avoid
