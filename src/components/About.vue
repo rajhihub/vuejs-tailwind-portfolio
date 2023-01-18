@@ -1,6 +1,6 @@
 <template>
   
-  <div class="page-section -mb-5">
+  <div class="bg-green-50 page-section pt-5 -mb-5">
     <div class="container">
       <div class="row">
         <div class="col-lg-6 py-3 wow zoomIn">
@@ -56,7 +56,7 @@
   </div>
   <!-- .page-section -->
 
-  <div class="page-section">
+  <div class=" bg-green-50 page-section">
     <div class="container">
       <div class="row">
         <div class="col-lg-6 p-4 -mt-9 lg:mt-0">

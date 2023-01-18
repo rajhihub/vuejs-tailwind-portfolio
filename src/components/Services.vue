@@ -1,6 +1,6 @@
 <template>
-  <div class="hidden lg:flex lg:items-center lg:justify-center lg:mb-10">
-    <div class="page-section features">
+  <div class="bg-purple-50 hidden lg:flex lg:items-center lg:justify-center">
+    <div class=" bg-purple-50 page-section features">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-md-6 col-lg-4 py-3 wow fadeInUp">
@@ -12,7 +12,7 @@
                   style="width: 150px; height: 150px"></lord-icon>
               </div>
               <div>
-                <h4>Front End</h4>
+                <h>Front End</h>
                 <p>
                   I like to craft solid and scalable frontend products with
                   great user experiences.

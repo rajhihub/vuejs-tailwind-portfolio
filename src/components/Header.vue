@@ -4,7 +4,7 @@
       <div class="container h-100">
         <div class="row align-items-center h-100">
           <div class="col-lg-6 py-3 wow fadeInUp">
-            <p class=" text-green-600 text-2xl lg:text-4xl font-medium lg:font-semibold mb-5 lg:leading-normal leading-snug ">
+            <p class=" text-green-600 hover:text-green-500 text-2xl lg:text-4xl font-medium lg:font-semibold mb-5 lg:leading-normal leading-snug ">
               HI, I'm ANASKHON
               <br />
               Front-End Developer, <br> Blockchain Engineer

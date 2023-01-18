@@ -1,12 +1,12 @@
 <template>
   <nav
-    class="p-3 border-gray-200 rounded bg-purple-50 dark:bg-gray-800 dark:border-gray-700">
+    class="p-3 border-gray-200 rounded bg-green-50 dark:bg-gray-800 dark:border-gray-700">
     <div class="container flex flex-wrap items-center justify-between mx-auto">
       
       <p class="flex items-center hover:no-underline">
         <img src="" class="h-6 mr-3 sm:h-10" />
         <span
-          class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
+          class="self-center hover:text-green-600 text-xl font-semibold whitespace-nowrap dark:text-white">
           MyPortfolio
         </span>
       </p>
@@ -222,7 +222,7 @@
   </nav>
 
   <div
-    class="lg:hidden fixed bottom-0 left-0 z-20 w-full py-2.5 px-1 bg-gray-50 border-t border-gray-200 shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800 dark:border-gray-600">
+    class="lg:hidden fixed bottom-0 left-0 z-20 w-full rounded-t-xl drop-shadow-xl px-1 bg-gray-50 border-t border-gray-200 shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800 dark:border-gray-600">
     <div>
       <div
         class="flex flex-wrap items-center justify-evenly p-1 space-x-5 text-sm text-gray-500 dark:text-gray-400 sm:mt-0">
@@ -244,9 +244,9 @@
             </svg>
           </div>
           <div
-            class="flex items-center justify-center mt-1 text-green-900  font-medium rounded-lg dark:text-white hover:bg-blue-100 dark:hover:bg-gray-700"
+            class="flex items-center justify-center mt-1 text-green-900 font-medium rounded-lg dark:text-white hover:bg-green-100 dark:hover:bg-gray-700"
             aria-current="page">
-            <p class="whitespace-nowrap">Home</p>
+            <p class="">Home</p>
           </div>
         </router-link>
 
@@ -294,7 +294,7 @@
         </router-link>
         <router-link to="/blog" class="flex flex-col items-center justify-center">
           <div
-            class="flex items-center hover:no-underline mt-1 text-gray-900 rounded-lg dark:text-white hover:bg-blue-100 dark:hover:bg-gray-700"
+            class="flex items-center hover:no-underline hover:text-green-500 mt-1 text-gray-900 rounded-lg dark:text-white hover:bg-blue-100 dark:hover:bg-gray-700"
             aria-current="page">
             <svg
               aria-hidden="true"
@@ -309,9 +309,9 @@
             </svg>
           </div>
           <div
-            class="flex items-center justify-center mt-1 text-green-900 font-medium rounded-lg dark:text-white hover:bg-blue-100 dark:hover:bg-gray-700"
+            class="flex items-center justify-center mt-1 hover:text-green-500 text-green-900 font-medium rounded-lg dark:text-white hover:bg-blue-100 dark:hover:bg-gray-700"
             aria-current="page">
-            <p class="whitespace-nowrap">Blogs</p>
+            <div class="whitespace-nowrap">Blogs</div>
           </div>
         </router-link>
       </div>
@@ -351,8 +351,9 @@ export default {
 
 .vue-school-active-link {
   background-color: rgb(225, 255, 228);
-  padding: 5px 15px;
-  border-radius: 5px;
+  padding: 5px 12px;
+  border-radius: 10px;
+  text-decoration: none;
 }
 
 
