@@ -1,7 +1,7 @@
 <template>
   <Navbar />
 
-  <div class="container mt-5">
+  <div class="hidden lg:relative container mt-5">
     <div class="page-banner1">
       <div class="row justify-content-center align-items-center h-100">
         <div class="col-md-6">
@@ -20,11 +20,44 @@
     </div>
   </div>
 
-  <div class="page-section">
+  <div class="bg-green-50 page-section">
     <div class="container">
       <div class="row">
+
+        <div class="relative lg:hidden col-md-6 col-lg-3 py-3 wow fadeInUp">
+            <div class="bg-green-400 card-blog">
+              <div class="header">
+                <div class="entry-footer">
+                  <div class="post-author text-medium text-white">Welcome to Blogs</div>
+                  <a href="#" class="post-date"></a>
+                </div>
+              </div>
+              <div class="body">
+                <div class="pl-2 text-white text-2xl font-medium">
+                  <a>
+                    Share My Knowledge
+                    <br />
+                    Research Skills
+                    <br />
+                    Makes More Employable
+                  </a>
+                </div>
+
+                <div class="footer text-green-600 after:no-underline font-medium btn bg-green-200 ">
+              <a href ="https://prmblogs.tistory.com/">Visit Prime Blogs <span class="mai-chevron-forward text-sm"></span
+              ></a>
+            </div>
+
+
+
+
+              </div>
+            </div>
+          </div>
+        
+
         <div v-for="(a, i) in blog" :key="a" class="col-md-6 col-lg-4 py-3">
-          <div class="card-blog">
+          <div class="card-blog bg-white ">
             <div class="header">
               <div class="avatar">
                 <img :src="blog[i].profile" />
@@ -43,7 +76,7 @@
                 {{ blog[i].intro }}
               </div>
             </div>
-            <div class="footer">
+            <div class="footer ml-2">
               <a href ="https://prmblogs.tistory.com/" >Read More <span class="mai-chevron-forward text-sm"></span
               ></a>
             </div>
