@@ -1,7 +1,7 @@
 export default [{
         name: "Personal Portfolio",
         id: 1,
-        content: "My personal portfolio built with Vue, Bootstrap & Firebase",
+        content: "Personal Portfolio Built with Vue, Bootstrap & Firebase",
         image: "https://res.cloudinary.com/practicaldev/image/fetch/s--jswgkbze--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/ogxz02ff3gmawyazyx3y.png",
         tech1: "https://img.shields.io/badge/VueJS-439A97?style=flat&logo=Vue.js&logoColor=white",
         tech2: "https://img.shields.io/badge/Firebase-FFCA28?style=flat&logo=Firebase&logoColor=white",

@@ -21,7 +21,7 @@
               About
             </router-link>
             <a href="#" class=" btn btn-primary btn-split ml-2">
-              Download Resume
+              Resume
               <div class="fab"><span class="mai-play"></span></div>
             </a>
           </div>

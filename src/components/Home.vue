@@ -16,7 +16,8 @@
 
       <div class="flex flex-col space-y-3 lg:flex-row items-center justify-evenly space-x-3 h-full text-left py-5">
         
-        <div class=" bg-white rounded-xl drop-shadow-md col-lg-4 py-1 px-5 h-96 hover:-mt-3">
+    
+        <div class="bg-white rounded-xl drop-shadow-md col-lg-4 py-1 px-5 h-96">
           <lord-icon
             src="https://cdn.lordicon.com/dfxesbyu.json"
             trigger="hover"
@@ -56,7 +57,7 @@
             src="https://cdn.lordicon.com/hursldrn.json"
             trigger="morph"
             style="width: 150px; height: 150px"
-            class="hidden lg:flex"
+            class="hidden lg:flex"  
           >
           </lord-icon>
 
@@ -75,6 +76,7 @@
   </div>
 
   <Blog :blog = "blog"/>
+  <Footer/>
 
   
 </template>
