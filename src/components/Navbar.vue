@@ -1,5 +1,5 @@
 <template>
-  <nav
+  <nav 
     class="p-3 border-gray-200 rounded bg-green-50 dark:bg-gray-800 dark:border-gray-700">
     <div class="container flex flex-wrap items-center justify-between mx-auto">
       

@@ -3,7 +3,8 @@
     <div class=" bg-green-50 page-section features">
       <div class="container">
         <div class="row justify-content-center">
-          <div class="col-md-6 col-lg-4 py-3 wow fadeInUp">
+          
+          <div v-motion-roll-visible-bottom class="col-md-6 col-lg-4 py-3 wow fadeInUp">
             <div class="d-flex flex-row">
               <div class="img-fluid mr-3">
                 <lord-icon
@@ -21,7 +22,7 @@
             </div>
           </div>
 
-          <div class="col-md-6 col-lg-4 py-3 wow fadeInUp">
+          <div v-motion-roll-visible-bottom class="col-md-6 col-lg-4 py-3 wow fadeInUp">
             <div class="d-flex flex-row">
               <div class="">
                 <div class="img-fluid mr-3">
@@ -41,7 +42,7 @@
             </div>
           </div>
 
-          <div class="col-md-6 col-lg-4 py-3 wow fadeInUp">
+          <div v-motion-roll-visible-bottom class="col-md-6 col-lg-4 py-3 wow fadeInUp">
             <div class="d-flex flex-row">
               <div class="img-fluid mr-3">
                 <lord-icon

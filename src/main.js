@@ -9,6 +9,8 @@ import './data/projects.js';
 import './style/home.css';
 import './style/tailwind.css';
 
+import { MotionPlugin } from '@vueuse/motion'
+
 import firebase from "firebase/compat/app";
 import "firebase/compat/auth";
 import "firebase/compat/firestore";
@@ -40,4 +42,11 @@ const $ = jQuery;
 window.$ = $;
 
 
-createApp(App).use(router).mount('#app')
+
+const app = createApp(App);
+
+app.use(MotionPlugin);
+app.use(router);
+
+
+app.mount("#app");

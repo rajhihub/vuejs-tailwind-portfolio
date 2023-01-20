@@ -3,9 +3,9 @@
   <div class="bg-green-50 page-section pt-5 -mb-5">
     <div class="container">
       <div class="row">
-        <div class="col-lg-6 py-3 wow zoomIn">
+        <div  class="col-lg-6 py-3 wow zoomIn">
           
-          <div class="img-place text-center hidden lg:flex">
+          <div v-motion-slide-left class="img-place text-center hidden lg:flex">
             <lottie-player
               src="https://assets2.lottiefiles.com/packages/lf20_qhrndegx.json"
               background="transparent"
@@ -15,7 +15,8 @@
             ></lottie-player>
           </div>
         </div>
-        <div class="col-lg-6 p-4">
+
+        <div v-motion-slide-left class="col-lg-6 p-4">
           <h2 class="title-section text-2xl">
             All About <span class="marked">Myself</span>
           </h2>
