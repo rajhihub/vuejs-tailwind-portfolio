@@ -1,5 +1,4 @@
 <template>
-  
   <!-- <footer class="page-footer">
     <div class="container">
       <div class="row justify-content-center mb-5">
@@ -68,8 +67,7 @@
     container
   </footer>-->
 
-
-<!--   
+  <!--   
 <footer class="bg-white dark:bg-gray-900 ">
     
     <div class="px-4 py-6 bg-gray-100 dark:bg-gray-700 md:flex md:items-center md:justify-between">
@@ -102,14 +100,15 @@
 </footer>
  -->
 
-
- <div
+  <div
     class="lg:hidden fixed bottom-0 left-0 z-20 w-full rounded-t-xl drop-shadow-xl px-1 bg-gray-50 border-t border-gray-200 shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800 dark:border-gray-600">
     <div>
       <div
         class="flex flex-wrap items-center justify-evenly p-1 space-x-5 text-sm text-gray-500 dark:text-gray-400 sm:mt-0">
-        
-        <router-link  @click="isActive" to="/" class="flex flex-col items-center justify-center">
+        <router-link
+          @click="isActive"
+          to="/"
+          class="flex flex-col items-center justify-center">
           <div
             class="flex items-center hover:no-underline mt-1 text-gray-900 rounded-lg dark:text-white hover:bg-blue-100 dark:hover:bg-gray-700"
             aria-current="page">
@@ -126,13 +125,15 @@
             </svg>
           </div>
           <div
-            class="flex items-center justify-center mt-1 text-green-900 hover:no-underline font-medium rounded-lg dark:text-white  dark:hover:bg-gray-700"
+            class="flex items-center justify-center mt-1 text-green-900 hover:no-underline font-medium rounded-lg dark:text-white dark:hover:bg-gray-700"
             aria-current="page">
             <p class="">Home</p>
           </div>
         </router-link>
 
-        <router-link to="/projects" class="flex flex-col items-center justify-center">
+        <router-link
+          to="/projects"
+          class="flex flex-col items-center justify-center">
           <div
             class="flex items-center hover:no-underline mt-1 text-gray-900 rounded-lg dark:text-white hover:bg-blue-100 dark:hover:bg-gray-700"
             aria-current="page">
@@ -147,14 +148,16 @@
             </svg>
           </div>
           <div
-            class="flex items-center justify-center mt-1 text-green-900 font-medium rounded-lg dark:text-white  dark:hover:bg-gray-700"
+            class="flex items-center justify-center mt-1 text-green-900 font-medium rounded-lg dark:text-white dark:hover:bg-gray-700"
             aria-current="page">
             <p class="whitespace-nowrap">Projects</p>
           </div>
         </router-link>
-        <router-link to="/about" class="flex flex-col items-center justify-center">
+        <router-link
+          to="/about"
+          class="flex flex-col items-center justify-center">
           <div
-            class="flex items-center hover:no-underline mt-1 text-gray-900 rounded-lg dark:text-white  dark:hover:bg-gray-700"
+            class="flex items-center hover:no-underline mt-1 text-gray-900 rounded-lg dark:text-white dark:hover:bg-gray-700"
             aria-current="page">
             <svg
               aria-hidden="true"
@@ -169,12 +172,14 @@
             </svg>
           </div>
           <div
-            class="flex items-center justify-center mt-1 text-green-900 font-medium rounded-lg dark:text-white  dark:hover:bg-gray-700"
+            class="flex items-center justify-center mt-1 text-green-900 font-medium rounded-lg dark:text-white dark:hover:bg-gray-700"
             aria-current="page">
             <p class="whitespace-nowrap">About</p>
           </div>
         </router-link>
-        <router-link to="/blog" class="flex flex-col items-center justify-center">
+        <router-link
+          to="/blog"
+          class="flex flex-col items-center justify-center">
           <div
             class="flex items-center hover:no-underline hover:text-green-500 mt-1 text-gray-900 rounded-lg dark:text-white hover:bg-blue-100 dark:hover:bg-gray-700"
             aria-current="page">
@@ -199,17 +204,14 @@
       </div>
     </div>
   </div>
-
-
-
 </template>
 
 <script>
 export default {
-  props : {
+  props: {
     blog: Array,
-  }
-}
+  },
+};
 </script>
 
 <style></style>

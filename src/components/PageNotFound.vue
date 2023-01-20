@@ -1,46 +1,41 @@
 <template>
-  <div class="justify-content-center" >
+  <div class="justify-content-center">
     <section class="page_404">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="col-sm-10 col-sm-offset-1 text-center">
-            <div class="four_zero_four_bg">
-              <h1 class="text-center">404</h1>
-            </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="col-sm-10 col-sm-offset-1 text-center">
+              <div class="four_zero_four_bg">
+                <h1 class="text-center">404</h1>
+              </div>
 
-            <div class="contant_box_404">
-              <h3 class="h2">Look like you're lost</h3>
+              <div class="contant_box_404">
+                <h3 class="h2">Look like you're lost</h3>
 
-              <p>the page you are looking for not avaible!</p>
+                <p>the page you are looking for not avaible!</p>
 
-              <router-link to="/" class="link_404">Go to Home</router-link>
+                <router-link to="/" class="link_404">Go to Home</router-link>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
   </div>
 </template>
 
 <script>
-export default {}
+export default {};
 </script>
 
 <style>
-
-
-
 .page_404 {
-
   margin-top: 50px;
   padding: 40px 0;
   background: #fff;
-  font-family: 'Arvo', serif;
-  margin-left: auto; 
-  margin-right: auto
-
+  font-family: "Arvo", serif;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .page_404 img {

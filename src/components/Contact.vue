@@ -1,6 +1,4 @@
-
 <template>
-
   <div class="page-section">
     <div class="container">
       <div class="row align-items-center">
@@ -44,8 +42,7 @@
               <textarea
                 rows="6"
                 class="form-control"
-                placeholder="Enter message"
-              ></textarea>
+                placeholder="Enter message"></textarea>
             </div>
             <button type="submit" class="btn btn-primary rounded-pill mt-4">
               Send Message
@@ -56,23 +53,20 @@
     </div>
     <!-- .container -->
   </div>
-
-
-
 </template>
 
 <script>
-import Navbar from './Navbar.vue';
-import Footer from './Footer.vue';
+import Navbar from "./Navbar.vue";
+import Footer from "./Footer.vue";
 
 export default {
-  name : 'Contact',
+  name: "Contact",
 
   components: {
-    Navbar :Navbar,
-    Footer : Footer,
-  } 
-}
+    Navbar: Navbar,
+    Footer: Footer,
+  },
+};
 </script>
 
 <style></style>

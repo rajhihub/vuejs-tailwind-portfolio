@@ -1,8 +1,7 @@
 <template>
-  <nav 
+  <nav
     class="p-3 border-gray-200 rounded bg-green-50 dark:bg-gray-800 dark:border-gray-700">
     <div class="container flex flex-wrap items-center justify-between mx-auto">
-      
       <p class="flex items-center hover:no-underline">
         <img src="" class="h-6 mr-3 sm:h-10" />
         <span
@@ -10,8 +9,7 @@
           MyPortfolio
         </span>
       </p>
-     
-      
+
       <div class="hidden w-full md:block md:w-auto">
         <ul
           class="flex flex-col mt-4 rounded-lg text-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-transparent dark:border-gray-700">
@@ -231,9 +229,6 @@ export default {
     inActive() {
       this.active += 1;
     },
-
-   
-
   },
 };
 </script>
@@ -255,6 +250,4 @@ export default {
   border-radius: 10px;
   text-decoration: none;
 }
-
-
 </style>

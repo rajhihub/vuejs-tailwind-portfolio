@@ -1,7 +1,12 @@
 <template>
   <Navbar />
 
-  <div class="hidden lg:block container mt-5">
+  <div
+    v-motion
+    :initial="{ opacity: 0, y: 200 }"
+    :enter="{ opacity: 1, y: 0 }"
+    :delay="700"
+    class="hidden lg:block container mt-5">
     <div class="page-banner1">
       <div class="row justify-content-center align-items-center h-100">
         <div class="col-md-6">
@@ -24,10 +29,15 @@
 
   <div class="bg-green-50 py-5 page-section">
     <div class="container">
-      <div class="text-center wow fadeInUp">
+      <div
+        v-motion
+        :initial="{ opacity: 0, x: 200 }"
+        :visible="{ opacity: 1, x: 0 }"
+        :delay="800"
+        class="text-center wow fadeInUp">
         <div class="text-2xl mb-3">Personality as Developer</div>
         <h3 class="title-section">
-          <span class="marked">"Slow and Steady</span>
+          <span class="">"Slow and Steady</span>
           Win The Rase"
         </h3>
         <div class="divider mx-auto"></div>
@@ -36,6 +46,10 @@
       <div
         class="flex flex-col lg:flex-row items-center justify-evenly space-x-3 h-full text-left py-5">
         <div
+          v-motion
+          :initial="{ opacity: 0, y: 200 }"
+          :visible="{ opacity: 1, y: 0 }"
+          :delay="800"
           class="bg-white rounded-xl drop-shadow-md mt-3 col-lg-4 ml-2 py-1 px-5 h-96 hover:-mt-3 cursor-default hover:shadow-lg hover:shadow-green-100">
           <lord-icon
             src="https://cdn.lordicon.com/dfxesbyu.json"
@@ -54,6 +68,10 @@
         </div>
 
         <div
+          v-motion
+          :initial="{ opacity: 0, y: 200 }"
+          :visible="{ opacity: 1, y: 0 }"
+          :delay="1000"
           class="bg-white rounded-xl mt-3 drop-shadow-md col-lg-4 ml-2 py-1 px-5 h-96 hover:-mt-3 cursor-default hover:shadow-lg hover:shadow-green-100">
           <lord-icon
             src="https://cdn.lordicon.com/xqgancly.json"
@@ -73,6 +91,10 @@
         </div>
 
         <div
+          v-motion
+          :initial="{ opacity: 0, y: 200 }"
+          :visible="{ opacity: 1, y: 0 }"
+          :delay="1400"
           class="bg-white rounded-xl drop-shadow-md mt-3 col-lg-4 ml-2 py-1 px-5 h-96 hover:-mt-3 cursor-default hover:shadow-lg hover:shadow-green-100">
           <lord-icon
             src="https://cdn.lordicon.com/hursldrn.json"

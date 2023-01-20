@@ -3,16 +3,17 @@
 
   <div class="page-section pt-5" style="margin-top: 100px">
     <div class="container">
-
-        <nav aria-label="Breadcrumb">
-          <ul class="breadcrumb p-0 mb-0 bg-transparent">
-            <li class="breadcrumb-item"><router-link to ="/">Home</router-link></li>
-            <li class="breadcrumb-item"><router-link to ="/blog">All Blog</router-link></li>
-            <li class="breadcrumb-item active">Discover The Blogs</li>
-          </ul>
-        </nav>
-
-
+      <nav aria-label="Breadcrumb">
+        <ul class="breadcrumb p-0 mb-0 bg-transparent">
+          <li class="breadcrumb-item">
+            <router-link to="/">Home</router-link>
+          </li>
+          <li class="breadcrumb-item">
+            <router-link to="/blog">All Blog</router-link>
+          </li>
+          <li class="breadcrumb-item active">Discover The Blogs</li>
+        </ul>
+      </nav>
 
       <div class="row">
         <div class="col-lg-8">
@@ -44,8 +45,12 @@
               </p>
               <br />
               <blockquote class="quote">
-                {{ blog[0].code2 }}<br /><br />
-                {{ blog[0].code3 }}<br /><br />
+                {{ blog[0].code2 }}
+                <br />
+                <br />
+                {{ blog[0].code3 }}
+                <br />
+                <br />
                 {{ blog[0].code4 }}
               </blockquote>
               <br />
@@ -68,8 +73,7 @@
                 <input
                   type="text"
                   class="form-control"
-                  placeholder="Enter keyword.."
-                />
+                  placeholder="Enter keyword.." />
                 <button type="submit" class="btn btn-primary btn-block">
                   Search
                 </button>
@@ -104,10 +108,10 @@
                     <a>{{ blog[i + 1].title }}</a>
                   </h6>
                   <div class="meta">
-                    <a href="#"
-                      ><span class="mai-calendar"></span
-                      >{{ blog[i + 2].date }}</a
-                    >
+                    <a href="#">
+                      <span class="mai-calendar"></span>
+                      {{ blog[i + 2].date }}
+                    </a>
                     <!-- <a href="#"><span class="mai-person"></span> Admin</a>
                         <a href="#"><span class="mai-chatbubbles"></span> 19</a> -->
                   </div>
@@ -134,29 +138,29 @@
       </div>
     </div>
   </div>
-  <Footer/>
+  <Footer />
 </template>
 
 <script>
-import Data from '../data/data.js'
-import Navbar from './Navbar.vue'
-import Footer from './Footer.vue'
-
+import Data from "../data/data.js";
+import Navbar from "./Navbar.vue";
+import Footer from "./Footer.vue";
 
 export default {
-  name: 'Single Blog',
-  data () {
+  name: "Single Blog",
+  data() {
     return {
-      blog: Data
-    }
+      blog: Data,
+    };
   },
   props: {
-    blog: Array
+    blog: Array,
   },
   components: {
-    Navbar,Footer,
-  }
-}
+    Navbar,
+    Footer,
+  },
+};
 </script>
 
 <style></style>
