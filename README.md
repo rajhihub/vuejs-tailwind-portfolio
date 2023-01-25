@@ -35,11 +35,9 @@ Written in VueJS, Bootstrap and Tailwind CSS!
 
 <a href="https://personal-portfolio-2102f.web.app/">Visit Portfolio</a>
 
-
-
 ## Features [특징]
 
--   Simple and responsive design
+-   Simple, responsive design
 -   [Vue.js v3](https://vuejs.org) with [Vue Router](https://router.vuejs.org)
 -   [Tailwind CSS v3](https://tailwindcss.com)
 -   Vue transitions
