@@ -62,7 +62,7 @@ Written in VueJS, Bootstrap and Tailwind CSS!
 brew install node
 ```
 
-2. ##### Clone the repo:
+2. ##### Clone the reposity:
 
 ```
 git clone https://github.com/anaskhonprime/vuejs-tailwind-portfolio.git
