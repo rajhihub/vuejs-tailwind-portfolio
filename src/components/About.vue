@@ -3,19 +3,6 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-6 py-3 wow zoomIn">
-          <div
-            v-motion
-            :initial="{ opacity: 0, x: 150 }"
-            :visible="{ opacity: 1, x: 0 }"
-            :delay="500"
-            class="img-place text-center hidden lg:flex">
-            <lottie-player
-              src="https://assets2.lottiefiles.com/packages/lf20_qhrndegx.json"
-              background="transparent"
-              speed="1"
-              style="max-width: 500px; max-height: 500px"
-              autoplay></lottie-player>
-          </div>
         </div>
 
         <div class="col-lg-6 p-4">
@@ -25,8 +12,8 @@
             :visible="{ opacity: 1, x: 0 }"
             :delay="400"
             class="title-section text-2xl">
-            All About
-            <span class="marked">Myself</span>
+            Sejarah
+            <span class="marked">Desa</span>
           </h2>
           <div class="divider"></div>
 
@@ -37,9 +24,18 @@
             :delay="1000"
             v-scroll:#main="handleScroll">
             <p>
-              I’m a Junior Front-End Developer located in South Korea. I learn a
-              serious passion for UI effects, animations and creating intuitive,
-              dynamic user experiences.
+              Pada jaman penjajahan Belanda, mulai ada pembagian distrik atau wilayah,
+              termasuk wilayah Kecamatan Gunungputri. Pada saat itu, Kecamatan Gunungputri
+              hanya ada 9 Desa, yaitu Desa Gunungputri, Desa Tlajung Udik, Desa Cicadas,
+              Desa Wanaherang, Desa Bojongnangka, Desa Cikeas udik, Desa Nagrak,
+              Desa Ciangsana dan Desa Bojong Kulur. Baru kemudian, Desa Gunung Putri
+              dimekarkan menjadi Desa Gunungputri dan Desa Karanggan. Jadi Jumlah Desa di kecamatan Gunungputri ada 10 Desa.
+
+Desa Wanaherang merupakan Ibu kota Kecaamatan Gunungputri. Kantor Camatnya  di Desa Wanaherang, semula tepatnya di Kampung Cikuda, di rumah atau bangunan tempat peninggalan Belanda, kemudian berpindah ke Kampung Tlajung, Jalan Raya Wanaherang RT 01 RW.02 sampai dengan tahun 1995. Pada Tahun 1996, Kantor Kecamatan Gunungputri pindah ke Kampung Parungdengdek Rt 02 RW.011 sampai saat ini. Hal ini menjadikan desa Wanaherang memiliki posisi yang strategis, karena sebagai ibu kota kecamatan.
+
+Secara Administratif, Desa Wanaherang terdiri dari Dusun I Kampung Tlajung, Dusun II Kampung Jampang, Dusun III Kampung Cikuda dan Kampung Rawa Bejog, Dusun IV Kampung Wanaherang, Dusun V Kampung Parungdengdek.
+
+Dusun I Kampung Tlajung terdiri dari 3 wilayah rukun warga (RW), yang didalamnya ada 14 rukun tetangga (RT). Dusun II, Kampung Jampang terbagi menjadi dua wilayah, yakni Kampung Jampang, dan perumahan Legenda Wisata. Kampung Jampang terdiri 2 rukun warga yang didalamnya ada 7 rukun tetangga (RT), dan komplek perumahan Legenda Wisata dibagi menjadi 13  rukun warga (RW), yang didalamnya ada  58  rukun tetenagga (RT). Dusun III, Kampung Cikuda terdiri dari 3 rukun warga (RW) yang didalamnya ada 11 rukun tetangga (RT). Dusun III, Kampung Wanaherang terdiri dari 2 rukun warga (RW) yang didalamnya ada 6 rukun tetangga (RT), dan Kampung Parungdengdek terdiri dari 3 rukun warga (RW), yang didalamnya ada 10 Rukun tetangga (RT).
             </p>
           </div>
 
@@ -49,11 +45,7 @@
             :visible="{ opacity: 1, y: 0 }"
             :delay="1200">
             <p>
-              I'm a well organized person, problem solver, independent employee
-              with high attention to detail. Fan of Football and Boxing, outdoor
-              activities with my friends, TV series and English literature.
-              Actually, I have been living in South Korea for 5 years so I
-              almost native in Korean.
+            
             </p>
           </div>
 
@@ -63,14 +55,13 @@
             :visible="{ opacity: 1, y: 0 }"
             :delay="1400">
             <p class="hidden lg:flex">
-              And I'm interested in the entire creative frontend spectrum and
-              working on ambitious projects with positive people.
+          
             </p>
           </div>
 
           <div class="img-place mb-3"></div>
-          <a href="#" class="btn btn-primary">More Details</a>
-          <a href="#" class="btn btn-outline border ml-2">Success Stories</a>
+          <a href="#" class="btn btn-primary"> </a>
+          <a href="#" class="btn btn-outline border ml-2"> </a>
         </div>
       </div>
     </div>
@@ -98,10 +89,7 @@
             :visible="{ opacity: 1, y: 0 }"
             :delay="1200"
             class="mb-4">
-            I graduated from Chonnam National University three months ago with a
-            bachelor’s in Computer Engineering. My experiences in school gave me
-            strong communication and networking skills, which are crucial for
-            event planning.
+            
           </p>
           <p
             v-motion
@@ -109,10 +97,7 @@
             :visible="{ opacity: 1, y: 0 }"
             :delay="1200"
             class="mb-4">
-            I create successful responsive websites that are fast, easy to use,
-            and built with best practices. The main area of my expertise is
-            front-end development, HTML, CSS, JS, building small and simple web
-            apps,features, animations, and coding interactive. layouts.
+           
           </p>
 
           <p
@@ -121,12 +106,7 @@
             :visible="{ opacity: 1, y: 0 }"
             :delay="1400"
             class="mb-5 hidden lg:flex">
-            I also have experiences with building Nft Smart Contract and
-            Blockchain Solutions as freelancer developer in South Korea. Since
-            beginning my journey as a freelance developer nearly 10 months ago,
-            I’ve done remote work for agencies, consulted for startups, and
-            collaborated with talented people to create Nfts,Smart Contracts and
-            Dapps for both business and consumer use.
+          
           </p>
 
           <router-link
@@ -149,20 +129,7 @@
           </router-link>
         </div>
         <div class="col-lg-6 py-3 wow zoomIn">
-          <div
-            v-motion
-            :initial="{ opacity: 0, x: 200 }"
-            :visible="{ opacity: 1, x: 0 }"
-            :delay="800"
-            class="img-place text-center">
-            <lottie-player
-              src="https://assets2.lottiefiles.com/packages/lf20_u4jjb9bd.json"
-              background="transparent"
-              speed="0.5"
-              style="max-width: 550px; max-height: 550px"
-              loop
-              autoplay></lottie-player>
-          </div>
+          
         </div>
       </div>
     </div>
