@@ -13,7 +13,7 @@
           :visible="{ opacity: 1, y: 0 }"
           :delay="600"
           class="text-2xl mb-3">
-          Personality as Developer
+          Pemerintahan Desa Wanaherang
         </div>
         <h3
           v-motion
@@ -21,8 +21,8 @@
           :visible="{ opacity: 1, y: 0 }"
           :delay="600"
           class="title-section">
-          <span>"Slow and Steady</span>
-          Win The Rase"
+          <span>"Visi</span>
+          & Misi"
         </h3>
         <div class="divider mx-auto"></div>
       </div>
@@ -42,12 +42,10 @@
             class="hidden lg:flex"></lord-icon>
 
           <div class="text-2xl font-semibold text-green-800 mt-4 pl-1">
-            Quick Learning
+           Visi
           </div>
           <p class="text-left text-base lg:text-sm leading-relaxed">
-            Best software developers are often fantastic self-learners.The ideal
-            skill any person can have is understanding how to learn, and ideal
-            developers have acquired the skill of self-learning.
+            Mewujudkan Desa Wanaherang yang lebih Maju, Sejahtera, Berkeadaban dan Bermartabat melalui peningkatan kemampuan Sumber Daya Manusia (SDM) sebagai insan pembangunan dan pemanfaatan Sumber Daya Alam (SDA) secara produktif, efektif dan efisien.
           </p>
         </div>
 
@@ -64,13 +62,21 @@
             class="hidden lg:flex"></lord-icon>
 
           <div class="text-2xl font-semibold text-green-800 mt-4 pl-1">
-            Problem Solving
+            Misi
           </div>
           <p class="text-left text-base lg:text-sm leading-relaxed">
-            Problem-solving is a one of the most important part of the work.
-            Problem-solving also has to do with utilizing creativity and logical
-            thought processes to identify problems and resolve them with
-            software.
+            Mewujudkan pelayanan publik yang professional, ramah dan tuntas dengan memanfaatkan teknologi dan informasi
+Meningkatkan kualitas SDM bagi aparatur Pemerintahan Desa 
+Mewujudkan tata kelola pemerintahan yang amanah, transparan dan taat terhadap peraturan
+Mewujudkan pembangunan fisik dan non-fisik
+Meningkatkan mutu layanan kesehatan melalui program gerakan desa sehat
+Memperkuat sendi-sendi ekonomi melalui Padat Karya Tunai Desa (PKTD) dan penguatan kesehatan masyarakat melalui upaya pencegahan dan penanganan COVID-19
+Meningkatkan kesadaran hukum masyarakat melalui program masyarakat sadar hukum
+Meningkatkan potensi masyarakat dalam bidang pendidikan, keagamaan, kebudayaan, sosial dan olahraga
+Mengembangkan perekonomian masyarakat melalui pemanfaatan potensi desa
+Menggali potensi desa dalam rangka peningkatan Pendapatan Asli Desa
+Mewujudkan peran serta pemuda untuk mengurangi Penyandang Masalah Kesejahteraan Sosial (PMKS) melalui Karang Taruna sebagai mitra Pemerintahan Desa
+Memaksimalkan kinerja Badan Usaha Milik Desa (BUMDES) yang merupakan pilar ekonomi desa dan sebagai mitra perusahaan yang ada di lingkungan Desa Wanaherang.
           </p>
         </div>
 
@@ -87,13 +93,12 @@
             class="hidden lg:flex"></lord-icon>
 
           <div class="text-2xl font-semibold text-green-800 mt-4 pl-1">
-            Honesty
+            Sejarah
           </div>
           <p class="text-left text-base lg:text-sm leading-relaxed">
-            Software developers need to learn to admit their mistakes. Of
-            course, making a mistake occurs to all of us. The most important
-            thing to do is to make an effort to learn from them and try to avoid
-            them later in life.
+            Menurut cerita masyarakat dari mulut kemulut, bahwa pada sekitar pertengahan abad ke 18 Masehi, ada warga membuka hutan. Pada saat bekerja membuka hutan ia mencari air untuk minum. Setelah berjalan cukup lama dan berkeliling- keliling hutan maka sampailah pada satu tempat yang disana ada mata air yang jernih, yang airnya dapat diminum langsung. Keberadaan mata iir tersebut dari hari ke  hari semakin terkenal, maka lambat laun menjadi cerita dari mulut ke mulut ada air jenih (herang) di tengah hutan (wana). Mata air tersebut sangat jernih, atau "herang" kata orang sunda yang berada di tengah leuweung atau hutan atau "wana".
+
+Mata air yang jernih ditengah hutan ini cikal bakal penamaan Wanaherang.
           </p>
         </div>
       </div>
