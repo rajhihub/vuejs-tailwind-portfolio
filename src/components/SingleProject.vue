@@ -7,12 +7,12 @@
         <nav aria-label="Breadcrumb">
           <ul class="breadcrumb p-0 mb-0 bg-transparent">
             <li class="breadcrumb-item">
-              <router-link to="/">Home</router-link>
+              <router-link to="/">Beranda</router-link>
             </li>
             <li class="breadcrumb-item">
-              <router-link to="/projects">All Projects</router-link>
+              <router-link to="/projects">Penduduk</router-link>
             </li>
-            <li class="breadcrumb-item active">Projects</li>
+            <li class="breadcrumb-item active">Total : 37.626</li>
           </ul>
         </nav>
 
@@ -53,11 +53,7 @@
 
                   <div class="text-center mt-5">
                     <button class="btn btn-primary">
-                      <a
-                        class="text-white"
-                        href="https://prmblogs.tistory.com/">
-                        READ MORE
-                      </a>
+                  
                     </button>
                   </div>
                 </div>
@@ -75,9 +71,7 @@
                     type="text"
                     class="form-control"
                     placeholder="Enter keyword.." />
-                  <button type="submit" class="btn btn-primary btn-block">
-                    Search
-                  </button>
+                  
                 </form>
               </div>
 
