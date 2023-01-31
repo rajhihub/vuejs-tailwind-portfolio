@@ -127,7 +127,7 @@
           <div
             class="flex items-center justify-center mt-1 text-green-900 hover:no-underline font-medium rounded-lg dark:text-white dark:hover:bg-gray-700"
             aria-current="page">
-            <p class="">Home</p>
+            <p class="">Beranda</p>
           </div>
         </router-link>
 
@@ -150,7 +150,7 @@
           <div
             class="flex items-center justify-center mt-1 text-green-900 font-medium rounded-lg dark:text-white dark:hover:bg-gray-700"
             aria-current="page">
-            <p class="whitespace-nowrap">Projects</p>
+            <p class="whitespace-nowrap">Visi Misi</p>
           </div>
         </router-link>
         <router-link
@@ -174,7 +174,7 @@
           <div
             class="flex items-center justify-center mt-1 text-green-900 font-medium rounded-lg dark:text-white dark:hover:bg-gray-700"
             aria-current="page">
-            <p class="whitespace-nowrap">About</p>
+            <p class="whitespace-nowrap">Tentang kami</p>
           </div>
         </router-link>
         <router-link
@@ -198,7 +198,7 @@
           <div
             class="flex items-center justify-center mt-1 hover:text-green-500 text-green-900 font-medium rounded-lg dark:text-white hover:bg-blue-100 dark:hover:bg-gray-700"
             aria-current="page">
-            <div class="whitespace-nowrap">Blogs</div>
+            <div class="whitespace-nowrap">Berita Desa</div>
           </div>
         </router-link>
       </div>
