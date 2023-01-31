@@ -6,7 +6,7 @@
         <img src="" class="h-6 mr-3 sm:h-10" />
         <span
           class="self-center hover:text-green-600 text-xl font-semibold whitespace-nowrap dark:text-white">
-          MyPortfolio
+          Desa Wanaherang
         </span>
       </p>
 
@@ -29,7 +29,7 @@
                   fill-rule="evenodd"
                   d="M9.293 2.293a1 1 0 011.414 0l7 7A1 1 0 0117 11h-1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-3a1 1 0 00-1-1H9a1 1 0 00-1 1v3a1 1 0 01-1 1H5a1 1 0 01-1-1v-6H3a1 1 0 01-.707-1.707l7-7z"></path>
               </svg>
-              <span class="flex-1 ml-2 whitespace-nowrap">Home</span>
+              <span class="flex-1 ml-2 whitespace-nowrap">Beranda</span>
             </router-link>
           </li>
           <li>
@@ -46,7 +46,7 @@
                 <path
                   d="M2 4.25A2.25 2.25 0 014.25 2h2.5A2.25 2.25 0 019 4.25v2.5A2.25 2.25 0 016.75 9h-2.5A2.25 2.25 0 012 6.75v-2.5zM2 13.25A2.25 2.25 0 014.25 11h2.5A2.25 2.25 0 019 13.25v2.5A2.25 2.25 0 016.75 18h-2.5A2.25 2.25 0 012 15.75v-2.5zM11 4.25A2.25 2.25 0 0113.25 2h2.5A2.25 2.25 0 0118 4.25v2.5A2.25 2.25 0 0115.75 9h-2.5A2.25 2.25 0 0111 6.75v-2.5zM15.25 11.75a.75.75 0 00-1.5 0v2h-2a.75.75 0 000 1.5h2v2a.75.75 0 001.5 0v-2h2a.75.75 0 000-1.5h-2v-2z"></path>
               </svg>
-              <span class="flex-1 ml-2 whitespace-nowrap">Projects</span>
+              <span class="flex-1 ml-2 whitespace-nowrap">Visi Dan Misi Desa</span>
             </router-link>
           </li>
           <li>
@@ -65,7 +65,7 @@
                   fill-rule="evenodd"
                   d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z"></path>
               </svg>
-              <span class="flex-1 ml-2 whitespace-nowrap">About</span>
+              <span class="flex-1 ml-2 whitespace-nowrap">Peta Desa</span>
             </router-link>
           </li>
           <li>
@@ -84,7 +84,7 @@
                   fill-rule="evenodd"
                   d="M1 5.25A2.25 2.25 0 013.25 3h13.5A2.25 2.25 0 0119 5.25v9.5A2.25 2.25 0 0116.75 17H3.25A2.25 2.25 0 011 14.75v-9.5zm1.5 5.81v3.69c0 .414.336.75.75.75h13.5a.75.75 0 00.75-.75v-2.69l-2.22-2.219a.75.75 0 00-1.06 0l-1.91 1.909.47.47a.75.75 0 11-1.06 1.06L6.53 8.091a.75.75 0 00-1.06 0l-2.97 2.97zM12 7a1 1 0 11-2 0 1 1 0 012 0z"></path>
               </svg>
-              <span class="flex-1 ml-2 whitespace-nowrap">Blogs</span>
+              <span class="flex-1 ml-2 whitespace-nowrap">Berita Desa</span>
             </router-link>
           </li>
 
@@ -133,7 +133,7 @@
                 </g>
               </svg>
 
-              English
+              Bahasa
             </button>
             <div
               class="z-50 hidden my-2 p-3 text-base list-none bg-white divide-y divide-gray-100 rounded shadow dark:bg-gray-700"
@@ -172,7 +172,7 @@
                             transform="scale(3.9385)" />
                         </g>
                       </svg>
-                      English
+                      EN
                     </div>
                   </a>
                 </li>
@@ -185,7 +185,7 @@
                       <img
                         class="h-3.5 w-3.5 rounded-full mr-2"
                         src="@/images/korea.png" />
-                      Korean
+                      EN
                     </div>
                   </a>
                 </li>
@@ -197,7 +197,7 @@
               class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
               aria-controls="mobile-menu-language-select"
               aria-expanded="false">
-              <span class="sr-only">Open main menu</span>
+              <span class="sr-only">Buka Menu</span>
               <svg
                 class="w-6 h-6"
                 fill="currentColor"
