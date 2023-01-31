@@ -42,8 +42,7 @@ Written in VueJS, Bootstrap and Tailwind CSS!
 -   [Tailwind CSS v3](https://tailwindcss.com)
 -   Vue transitions
 -   Reusable Components
--   Projects carousel
--   Vue.js smooth scroll
+
 
 -   V-motion Animations
 -   Firebase Config, Hosting
