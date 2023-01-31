@@ -8,7 +8,7 @@
           :visible="{ opacity: 1, y: 0 }"
           :delay="700"
           class="mt-2 subhead">
-          Popular Blog
+          Berita Populer
         </div>
         <h2
           v-motion
@@ -16,8 +16,8 @@
           :visible="{ opacity: 1, y: 0 }"
           :delay="700"
           class="title-section">
-          Read My Latest
-          <span class="">Blogs</span>
+          Kegiatan
+          <span class="">Berita</span>
         </h2>
         <div class="divider mx-auto"></div>
       </div>
@@ -32,18 +32,18 @@
             class="card-blog">
             <div class="header">
               <div class="entry-footer">
-                <div class="post-author">Welcome to the Blogs</div>
+                <div class="post-author">Selamat datang di Web Resmi Pemerintah Desa Wanaherang</div>
                 <a href="#" class="post-date"></a>
               </div>
             </div>
             <div class="body">
               <div class="post-title">
                 <a>
-                  Share My Knowledge
+                  -Ceras
                   <br />
-                  Research Skills
+                  - Bermartabat
                   <br />
-                  Makes More Employable
+                  - Religius
                 </a>
               </div>
             </div>
@@ -51,48 +51,15 @@
           </div>
         </div>
 
-        <div
-          v-for="(a, i) in 3"
-          :key="a"
-          class="col-md-6 col-lg-3 py-3 wow fadeInUp hover:-mt-3">
-          <div
-            v-motion
-            :initial="{ opacity: 0, y: 200 }"
-            :visible="{ opacity: 1, y: 0 }"
-            :delay="800"
-            class="bg-white card-blog">
-            <div class="header">
-              <div class="avatar">
-                <img :src="blog[i].profile" />
-              </div>
-              <div class="entry-footer">
-                <div class="post-author">{{ blog[i].username }}</div>
-                <a class="post-date">{{ blog[i].date }}</a>
-              </div>
-            </div>
-            <div class="body">
-              <div class="post-title">
-                <a>{{ blog[i].title }}</a>
-              </div>
-              <div class="post-excerpt">
-                {{ blog[i].intro }}
-              </div>
-            </div>
-            <div class="footer">
-              <a href="https://prmblogs.tistory.com/">
-                Read More
-                <span class="mai-chevron-forward text-sm"></span>
-              </a>
-            </div>
-          </div>
-        </div>
+        
+        
       </div>
 
       <div class="text-center pb-5">
         <router-link
           to="https://vueblog-13514.web.app/"
           class="btn btn-outline-primary rounded-pill">
-          Discover More
+          Desa Wanaherang
         </router-link>
       </div>
     </div>
