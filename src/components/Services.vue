@@ -10,17 +10,10 @@
             :delay="1000"
             class="col-md-6 col-lg-4 py-3 wow fadeInUp">
             <div class="d-flex flex-row">
-              <div class="img-fluid mr-3">
-                <lord-icon
-                  src="https://cdn.lordicon.com/fyuvwkhk.json"
-                  trigger="hover"
-                  style="width: 150px; height: 150px"></lord-icon>
-              </div>
               <div>
-                <h>Front End</h>
+                <h>Poktan Desa Wanaherang</h>
                 <p>
-                  I like to craft solid and scalable frontend products with
-                  great user experiences.
+                Ketahanan Pangan dengan konsep Hidroponik
                 </p>
               </div>
             </div>
@@ -34,18 +27,13 @@
             class="col-md-6 col-lg-4 py-3 wow fadeInUp">
             <div class="d-flex flex-row">
               <div class="">
-                <div class="img-fluid mr-3">
-                  <lord-icon
-                    src="https://cdn.lordicon.com/rvulxkpr.json"
-                    trigger="hover"
-                    style="width: 150px; height: 150px"></lord-icon>
-                </div>
+                
               </div>
               <div>
-                <h4>Blockchain</h4>
+                <h4>PKK</h4>
                 <p>
-                  I also learn and work as Blockchain & Smart Contract
-                  freelancer developer.
+                 memiliki Kader yang sangat solid danlam semua kegiatan yang menunjang PKK desa wanaherang 
+    
                 </p>
               </div>
             </div>
@@ -58,17 +46,11 @@
             :delay="1400"
             class="col-md-6 col-lg-4 py-3 wow fadeInUp">
             <div class="d-flex flex-row">
-              <div class="img-fluid mr-3">
-                <lord-icon
-                  src="https://cdn.lordicon.com/hyymuwkm.json"
-                  trigger="hover"
-                  style="width: 150px; height: 150px"></lord-icon>
-              </div>
+              
               <div>
-                <h5>Mobile Apps</h5>
+                <h5>Karang Taruna</h5>
                 <p>
-                  I also highly interested in Native & Hybrid mobile app
-                  development.
+                 karang Taruna Desa Wanaherang yang aktif di masyarakat.
                 </p>
               </div>
             </div>
